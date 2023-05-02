@@ -1,0 +1,71 @@
+.containerSectionModulo {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 15px;
+}
+
+.containerSectionModulo h2 {
+  color: #000000;
+}
+.ContainerLOGOTODO {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 0 auto;
+}
+
+.logoEmpresaModulo {
+  width: 75px;
+  margin: auto 0;
+  /* margin: 0 auto; */
+}
+
+.logoEmpresaModulo img {
+  width: 95%;
+  margin: 0 auto;
+}
+
+.containerModulos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-content: center;
+  align-items: center;
+  gap: 28px;
+  min-height: 50vh;
+}
+.containerModulo {
+  display: flex;
+  flex-direction: column;
+  width: 220px;
+  height: 250px;
+  background-color: rgb(6, 6, 6);
+  justify-content: space-between;
+  align-content: center;
+  border-radius: 15px;
+  color: white;
+  padding-bottom: 15px;
+  transition: 400ms;
+  box-shadow: 5px -5px rgb(169, 168, 168);
+}
+
+.containerModulo:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+.moduloImgContainer {
+  width: 100%;
+}
+
+.moduloImgContainer img {
+  border-top-right-radius: 15px;
+  border-top-left-radius: 15px;
+  width: 100%;
+  height: 180px;
+}

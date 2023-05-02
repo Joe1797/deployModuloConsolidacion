@@ -1,0 +1,75 @@
+.containerPanelCocinero {
+  padding: 10px 20px;
+}
+
+.containerPedidosPanel {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.estadoPedidos {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+  flex-wrap: wrap;
+  align-items: center;
+  align-content: center;
+  margin-bottom: 10px;
+}
+
+.on {
+  background-color: #1f6193;
+  padding: 5px;
+  border-radius: 12px;
+  color: white;
+  font-weight: 700;
+  transition: 400ms;
+}
+
+.off {
+  background-color: rgb(212, 212, 212);
+  padding: 5px;
+  border-radius: 12px;
+  transition: 400ms;
+}
+
+/* :root {
+  --color-green: #00a878;
+  --color-red: #fe5e41;
+  --color-button: #fdffff;
+  --color-black: #000;
+}
+.switch-button {
+  display: inline-block;
+}
+.switch-button .switch-button__checkbox {
+  display: none;
+}
+.switch-button .switch-button__label {
+  background-color: var(--color-red);
+  width: 3rem;
+  height: 1.5rem;
+  border-radius: 3rem;
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+}
+.switch-button .switch-button__label:before {
+  transition: 0.2s;
+  display: block;
+  position: absolute;
+  width: 1.5rem;
+  height: 1.5rem;
+  background-color: var(--color-button);
+  content: "";
+  border-radius: 50%;
+  box-shadow: inset 0px 0px 0px 1px var(--color-black);
+}
+.switch-button .switch-button__checkbox:checked + .switch-button__label {
+  background-color: var(--color-green);
+}
+.switch-button .switch-button__checkbox:checked + .switch-button__label:before {
+  transform: translateX(1.5rem);
+} */

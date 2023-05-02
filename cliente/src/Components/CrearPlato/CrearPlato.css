@@ -1,0 +1,63 @@
+.containerCrear {
+  background-image: url("https://img.freepik.com/fotos-premium/mesa-madera-vacia-fondo-interior-borroso-cafeteria-o-restaurante-puede-utilizar-exhibicion-producto_7188-1500.jpg");
+  min-height: 75vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+.formContainerCrear {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  min-height: 25vh;
+  width: 400px;
+  margin: auto auto;
+  color: black;
+  font-size: 15px;
+  font-weight: 700;
+  border-radius: 20px;
+  backdrop-filter: blur(10px);
+  gap: 20px;
+  padding: 10px;
+}
+
+.containerInputsCrear {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.containerInputsCrear label {
+  font-size: 16px;
+  font-weight: 800;
+  font-style: normal;
+  color: rgb(0, 0, 0);
+  text-shadow: 1px 1px rgb(180, 180, 180);
+}
+
+.formContainerCrear input[type="submit"],
+.formContainerCrear button {
+  background-color: #1f6193;
+  color: white;
+  width: 100px;
+  border: none;
+  border-radius: 12px;
+  padding: 8px;
+  transition: 400ms;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.formContainerCrear input[type="submit"]:hover,
+.formContainerCrear button:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  background-color: #133956;
+}

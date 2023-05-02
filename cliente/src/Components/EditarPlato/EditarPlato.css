@@ -1,0 +1,35 @@
+.edit_form {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  width: 100%;
+  color: black;
+  font-size: 14px;
+  background-color: rgb(254, 232, 185);
+}
+
+.containerEditarInputs label {
+  width: 100%;
+}
+
+.containerEditarInputs {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.titulo_editado {
+  height: 8px;
+  font-size: 12px;
+  width: 60%;
+}
+
+.edit_form input[type="submit"] {
+  width: 60%;
+  margin: 0 auto;
+  padding: 0;
+  font-size: 10px;
+}

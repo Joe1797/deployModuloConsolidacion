@@ -1,0 +1,56 @@
+.rolesContainer {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  align-content: center;
+  flex-wrap: wrap;
+  min-height: 60vh;
+}
+
+.rolesContainer h3 {
+  color: #1f6193;
+  font-size: 20px;
+}
+
+.rolesAdminCocinero {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
+}
+
+.rolesContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  width: 150px;
+  height: 150px;
+  padding: 10px;
+  background-color: rgb(247, 247, 247);
+  margin: 10px;
+  border-radius: 15px;
+  transition: 400ms;
+}
+
+.rolesContent:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+.rolesContainerImg {
+  width: 100px;
+  height: 70%;
+  display: flex;
+  justify-content: center;
+}
+
+.rolesContainerImg img {
+  width: 100%;
+}
+
+.rolesContent p {
+  font-size: 15px;
+  font-weight: 800;
+}

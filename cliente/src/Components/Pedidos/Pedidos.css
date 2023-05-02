@@ -1,0 +1,58 @@
+.containerPedido {
+  display: flex;
+  flex-wrap: wrap;
+  min-width: 400px;
+  justify-content: space-evenly;
+  /* align-items: start; */
+  align-content: flex-start;
+  border: 1px solid rgb(219, 219, 219);
+  border-radius: 10px;
+  margin: 0;
+  min-height: 90px;
+  background-color: rgb(255, 255, 255);
+}
+
+.containerDetail {
+  max-width: 85px;
+  font-size: 12px;
+  padding: 5px;
+}
+
+.containerDetail strong {
+  border-bottom: 2px solid black;
+}
+
+.containerDetail p {
+  height: 30px;
+  margin: 0 3px;
+  text-align: center;
+  line-height: 30px;
+}
+
+.containerPedido div button {
+  margin-left: 5px;
+  border-radius: 5px;
+  outline: none;
+  border: green 1px solid;
+  background-color: rgb(139, 255, 139);
+  padding: 3px;
+  cursor: pointer;
+  transition: 400ms;
+  font-weight: 600;
+  margin-top: 20px;
+}
+
+.containerPedido div button:hover {
+  background-color: rgb(6, 156, 6);
+}
+
+.containerEntregado {
+  position: relative;
+  top: -8px;
+  right: -8px;
+  width: 18px;
+}
+
+.containerEntregado img {
+  width: 100%;
+}

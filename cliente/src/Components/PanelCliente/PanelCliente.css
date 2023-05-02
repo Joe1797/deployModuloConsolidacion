@@ -1,0 +1,25 @@
+.btnPedirCliente {
+  position: fixed;
+  right: 35px;
+  bottom: 25px;
+  padding: 8px;
+  background-color: rgb(255, 255, 0);
+  font-size: 15px;
+  border-radius: 10px;
+  font-weight: 700;
+  border: 1px solid rgb(214, 214, 214);
+  transition: 500ms ease;
+  color: rgb(193, 4, 4);
+}
+
+.btnPedirCliente:hover {
+  transform: translateY(-5px) scale(1.2);
+  background-color: cornflowerblue;
+  color: white;
+  border: transparent;
+}
+
+.containerCardsCliente {
+  display: flex;
+  flex-wrap: wrap;
+}
