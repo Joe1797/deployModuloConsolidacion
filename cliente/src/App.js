@@ -17,7 +17,9 @@ import { ClienteLandingPage } from "./Components/ClienteLandingPage/ClienteLandi
 import { ProtectedRoute } from "./Components/ProtectedRoute/ProtectedRoute";
 import { Reportes } from "./Components/Reportes/Reportes";
 import axios from "axios";
-axios.defaults.baseUrl = "http://localhost:3001/";
+// axios.defaults.baseUrl = "http://localhost:3001/";
+axios.defaults.baseUrl =
+  "https://deploymoduloconsolidacion-production.up.railway.app/";
 
 import { useState, useEffect } from "react";
 
