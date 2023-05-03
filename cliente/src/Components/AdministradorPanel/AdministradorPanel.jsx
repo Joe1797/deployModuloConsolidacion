@@ -15,7 +15,7 @@ export const AdministradorPanel = () => {
   const navigate = useNavigate();
   useEffect(() => {
     const getData = async () => {
-      const data = await axios("http://localhost:3001/allPlatos");
+      const data = await axios("/allPlatos");
       // console.log("AXIOS", data);
       setCarta(data.data.data);
     };
@@ -25,7 +25,7 @@ export const AdministradorPanel = () => {
 
   const publicarEvent = async () => {
     try {
-      const res = await axios.post("http://localhost:3001/crearCarta", {
+      const res = await axios.post("/crearCarta", {
         fecha: fecha,
         platos: seleccionados,
       });

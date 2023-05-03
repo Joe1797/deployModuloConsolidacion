@@ -22,7 +22,7 @@ export const PanelCliente = ({ auxiliarAct, setAuxiliarAct }) => {
   useEffect(() => {
     const getData = async () => {
       try {
-        const data = await axios("http://localhost:3001/allCartas");
+        const data = await axios("/allCartas");
         // console.log("AXIOS", data.data.data);
         setCarta(data.data.data[0]);
         if (data.data.data.length > 0) {
@@ -59,7 +59,7 @@ export const PanelCliente = ({ auxiliarAct, setAuxiliarAct }) => {
         (ac, e) => ac + e.precio * e.cantidad,
         0
       );
-      const res = await axios.post("http://localhost:3001/crearPedido", {
+      const res = await axios.post("/crearPedido", {
         fecha: fecha,
         pedido: pedidos,
         cliente_pedido: clienteData.id,
@@ -72,7 +72,7 @@ export const PanelCliente = ({ auxiliarAct, setAuxiliarAct }) => {
       idPedidos.forEach((e) => {
         const actualiar = async () => {
           await axios.patch(
-            `http://localhost:3001/actualizarStockPlato/${e.id}`,
+            `/actualizarStockPlato/${e.id}`,
             { cantidad: e.cantidad },
             {}
           );

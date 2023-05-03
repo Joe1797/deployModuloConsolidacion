@@ -58,7 +58,7 @@ export const Reportes = () => {
 
   useEffect(() => {
     const getData = async () => {
-      let req = await axios("http://localhost:3001/allPedidos");
+      let req = await axios("/allPedidos");
       //   console.log(req.data.data);
       setDatos(req.data.data);
     };

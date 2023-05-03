@@ -16,6 +16,8 @@ import { Comprobante } from "./Components/Comprobante/Comprobante";
 import { ClienteLandingPage } from "./Components/ClienteLandingPage/ClienteLandingPage";
 import { ProtectedRoute } from "./Components/ProtectedRoute/ProtectedRoute";
 import { Reportes } from "./Components/Reportes/Reportes";
+import axios from "axios";
+axios.defaults.baseUrl = "http://localhost:3001/";
 
 import { useState, useEffect } from "react";
 

@@ -15,7 +15,7 @@ export const CardMenu = ({
   const [editar, setEditar] = useState(0);
 
   const eliminarPlato = async () => {
-    await axios.patch(`http://localhost:3001/eliminarPlato/${id}`);
+    await axios.patch(`/eliminarPlato/${id}`);
     window.location.reload();
   };
 

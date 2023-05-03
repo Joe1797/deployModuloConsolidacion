@@ -19,10 +19,7 @@ export const Editar = ({ id, nombre, precio, stock, image }) => {
   };
 
   const actualizarPlato = async () => {
-    const req = await axios.patch(
-      `http://localhost:3001/editarPlato/${id}`,
-      info
-    );
+    const req = await axios.patch(`/editarPlato/${id}`, info);
     // console.log(req);
   };
   console.log(info);

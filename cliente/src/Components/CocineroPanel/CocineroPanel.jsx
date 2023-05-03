@@ -12,7 +12,7 @@ export const CocineroPanel = ({ auxiliarAct }) => {
 
   useEffect(() => {
     const getPedidos = async () => {
-      let req = await axios("http://localhost:3001/allPedidos");
+      let req = await axios("/allPedidos");
       // console.log(req.data.data);
       setPedidos(req.data.data);
     };

@@ -17,7 +17,7 @@ export const Pedidos = ({
   entregado,
 }) => {
   const confirmarPedido = async () => {
-    const req = await axios.patch(`http://localhost:3001/eliminarPedido/${id}`);
+    const req = await axios.patch(`/eliminarPedido/${id}`);
     console.log(req);
     setAux(aux + 1);
     let msgPlatos = "";
@@ -43,9 +43,7 @@ export const Pedidos = ({
   };
 
   const entregarPedido = async () => {
-    const req = await axios.patch(
-      `http://localhost:3001/pedidoEntregado/${id}`
-    );
+    const req = await axios.patch(`/pedidoEntregado/${id}`);
     console.log(req);
     setAux(aux + 1);
   };

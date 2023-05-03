@@ -44,10 +44,7 @@ export const ClienteLandingPage = () => {
   const logearseCliente = async (e) => {
     e.preventDefault();
     try {
-      const req = await axios.post(
-        "http://localhost:3001/logearseCliente",
-        inputsLog
-      );
+      const req = await axios.post("/logearseCliente", inputsLog);
 
       console.log(req.data.data.id);
       console.log(req.status);
@@ -74,7 +71,7 @@ export const ClienteLandingPage = () => {
   const crearCliente = async (e) => {
     e.preventDefault();
     try {
-      const req = await axios.post("http://localhost:3001/crearCliente", {
+      const req = await axios.post("/crearCliente", {
         usuario: inputsReg.usuario,
         contraseña: inputsReg.contraseña,
         nombreCompleto: inputsReg.nombres + " " + inputsReg.apellidos,

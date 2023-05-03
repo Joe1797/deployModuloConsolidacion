@@ -28,10 +28,7 @@ export const Login = ({ setActivo }) => {
     let status = 0;
     if (rol === "empresa") {
       try {
-        const res = await axios.post(
-          "http://localhost:3001/logearseEmpresa",
-          inputs
-        );
+        const res = await axios.post("/logearseEmpresa", inputs);
         // console.log("Consoles", res.status);
         status = res.status;
       } catch (error) {
@@ -46,10 +43,7 @@ export const Login = ({ setActivo }) => {
     }
     if (rol === "administrador") {
       try {
-        const res = await axios.post(
-          "http://localhost:3001/logearseAdministrador",
-          inputs
-        );
+        const res = await axios.post("/logearseAdministrador", inputs);
         // console.log("Consoles", res.status);
         status = res.status;
       } catch (error) {
@@ -60,10 +54,7 @@ export const Login = ({ setActivo }) => {
     }
     if (rol === "chef") {
       try {
-        const res = await axios.post(
-          "http://localhost:3001/logearseCocinero",
-          inputs
-        );
+        const res = await axios.post("/logearseCocinero", inputs);
         // console.log("Consoles", res.status);
         status = res.status;
       } catch (error) {

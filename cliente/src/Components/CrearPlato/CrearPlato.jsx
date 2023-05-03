@@ -27,7 +27,7 @@ export const CrearPlato = () => {
   const crearPlato = async (e) => {
     e.preventDefault();
     try {
-      const req = await axios.post("http://localhost:3001/crearPlato", inputs);
+      const req = await axios.post("/crearPlato", inputs);
       // console.log(req);
       setMensaje(req.data.message);
 
