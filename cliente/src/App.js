@@ -19,7 +19,7 @@ import { Reportes } from "./Components/Reportes/Reportes";
 import axios from "axios";
 import { useState, useEffect } from "react";
 // axios.defaults.baseUrl = "http://localhost:3001/";
-axios.defaults.baseUrl =
+axios.defaults.baseURL =
   "https://deploymoduloconsolidacion-production.up.railway.app/";
 
 function App() {
