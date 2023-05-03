@@ -19,8 +19,8 @@ import { Reportes } from "./Components/Reportes/Reportes";
 import axios from "axios";
 import { useState, useEffect } from "react";
 // axios.defaults.baseUrl = "http://localhost:3001/";
-let urlBase = "https://deploymoduloconsolidacion-production.up.railway.app";
-axios.defaults.baseUrl = urlBase;
+axios.defaults.baseUrl =
+  "https://deploymoduloconsolidacion-production.up.railway.app/";
 
 function App() {
   const [activo, setActivo] = useState();
